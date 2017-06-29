@@ -3,11 +3,13 @@ using ImobilizadoSolution.Web.Models.DTO;
 using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace ImobilizadoSolution.Web.Models.Map
 {
+    [Table("Imobilizado")]
     public class ImobilizadoMap : IBaseMap<Imobilizado, ImobilizadoDTO>
     {
         public List<Imobilizado> Mapper(List<ImobilizadoDTO> targets)

@@ -1,0 +1,122 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ImobilizadoSolution",
+		"_postman_id": "260a0ccd-ba48-5952-a98e-6bb940ff9d0d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta Imobilizado por ID",
+			"request": {
+				"url": "http://localhost/ImobilizadoSolution.Web/api/imobilizado/listarporcodigo/5953162d0e2d6e2725477b3c",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Imobilizado",
+			"request": {
+				"url": "http://localhost:50773/api/usuario/CadastrarUsuario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "1",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "nome",
+							"value": "Robin",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "login",
+							"value": "robin",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Imobilizado",
+			"request": {
+				"url": "http://localhost:50773/api/usuario/ExcluirUsuario/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Todos os Imobilizados",
+			"request": {
+				"url": "http://localhost/ImobilizadoSolution.Web/api/imobilizado/listar",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Imobilizado",
+			"request": {
+				"url": "http://localhost/ImobilizadoSolution.Web/api/imobilizado/listar",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codigo",
+							"value": "4",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "nome",
+							"value": "ThunderLord",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "login",
+							"value": "thunderlord",
+							"type": "text",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
